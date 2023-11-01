@@ -483,16 +483,25 @@ img {
     
         .section-customers {
             background-color: var(--white_background-color);
-            padding: 120px 0;
+            padding: 96px 0;
             margin: 0 auto;
+        }
+
+        .list-customers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
         }
     
         .list-point-customers {
             display: flex;
-            gap: 24px;
+            
+            gap: 16px;
             margin: 0;
-            justify-content: center;
-            flex-basis: calc((100% - 120px) / 6);
+            
+            
         }
     
         .link-container {
