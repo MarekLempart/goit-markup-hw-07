@@ -50,16 +50,18 @@ img {
     overflow: hidden;
 }
 
-
+.container {
+    min-width: 320px;
+}
 
 
 /* ================================================= MOBILE 👇 ========================================= */
 @media screen and (max-width: 767px) {
     /* cały kod */
 .container {
-    width: 396px;
+    width: 428px;
     margin: 0 auto;
-    padding: 0 0/*16px*/;
+    padding: 0 16px;
 }
     
     .list {
@@ -482,6 +484,8 @@ img {
         /*Studio Customers Section no. 5 Styles*/
     
         .section-customers {
+            display: block;
+            flex-wrap: wrap;
             background-color: var(--white_background-color);
             padding: 96px 0;
             margin: 0 auto;
@@ -489,26 +493,21 @@ img {
 
         .list-customers {
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 16px;
+            column-gap: 16px;
+            row-gap: 72px;
         }
-    
+
         .list-point-customers {
-            display: flex;
-            
-            gap: 16px;
-            margin: 0;
-            
-            
+            flex-basis: calc((100% - 16px) / 2);
         }
     
         .link-container {
-            padding: 16px 32px;
+            padding: 16px 40px;
             border: 1px solid var(--subtle_text-color);
             border-radius: 4px;
-            width: 168px;
+            width: 190px;
             height: 88px;
             display: flex;
             align-items: center;
@@ -550,7 +549,8 @@ img {
     
         .footer-container {
             display: flex;
-            align-items: baseline;
+            flex-direction: column;
+            align-items: center;
             justify-content: start;
         }
     
@@ -629,6 +629,8 @@ img {
         }
     
         .subscribe-container {
+            display: flex;
+            flex-direction: column;
             max-width: 456px;
             flex-shrink: 0;
         }
@@ -1205,7 +1207,7 @@ img {
     
         .logo-container {
             max-width: 264px;
-            margin-right: 120px;
+            margin: auto;
         }
     
         .footer-navigation-logo {
@@ -1235,7 +1237,7 @@ img {
     
         .socials-container {
             max-width: 208px;
-            margin-right: 80px;
+            margin: auto;
         }
     
         .text-socials {
