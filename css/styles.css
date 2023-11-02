@@ -51,7 +51,9 @@ img {
 }
 
 .container {
-    min-width: 320px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 
@@ -60,7 +62,7 @@ img {
     /* cały kod */
 .container {
     width: 428px;
-    margin: 0 auto;
+    margin: 0 0;
     padding: 0 16px;
 }
     
@@ -105,7 +107,8 @@ img {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 24px;
+            padding-top: 24px;
+            padding-bottom: 22px;
         }
     
         .navigation-logo {
@@ -117,15 +120,19 @@ img {
             line-height: 1.17;
             letter-spacing: 0.03em;
             text-transform: uppercase;
-            margin-right: 76px;
+            padding: 24px auto 22px 0;
             color: var(--pressed_state-color);
         }
     
         .logo-span {
             color: var(--dark-color);
         }
-    
+
         .navigation-page {
+            display: none;
+        }
+    
+        /*.navigation-page {
             align-items: center;
             gap: 40px;
             position: relative;
@@ -174,16 +181,20 @@ img {
             border-radius: 2px;
             top: 46px;
             left: 0;
+        }*/
+
+        .address {
+            display: none;
         }
     
-        .address {
+        /*.address {
             font-style: normal;
         }
     
         .address-list {
             gap: 40px;
             margin-right: 0px;
-        }
+        }*/
     
         .address-link {
             color: var(--text-color);
@@ -314,26 +325,27 @@ img {
     
         .hero-section {
             background-color: var(--hero_background-color);
-            padding: 188px 0px;
-            margin: 0 auto;
+            padding: 112px 0px;
+            margin: 0 0;
         }
     
         .background-image-section {
-            background-image: linear-gradient(#2E2F42B3, #2E2F42B3), url('../images/people-office-background-image.jpg');
+            background-image: linear-gradient(#2E2F42B3, #2E2F42B3), url('../images/mobile-people-office-background-image.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            max-width: 1440px;
+            max-width: 428px;
         }
     
         .main-headline {
             color: #FFF;
-            font-size: 56px;
+            text-align: center;
+            font-size: 36px;
             font-weight: 700;
-            line-height: 1.07;
+            line-height: 1.11;
             letter-spacing: 0.02em;
-            max-width: 496px;
-            margin: auto auto 48px auto;
+            max-width: 320px;
+            margin: auto auto 72px auto;
         }
     
         .main-headline-button {
@@ -543,7 +555,7 @@ img {
     
         .footer {
             background-color: var(--hero_background-color);
-            padding: 100px 0;
+            padding: 96px 0;
             margin: 0 auto;
         }
     
@@ -551,12 +563,17 @@ img {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: start;
+            justify-content: center;
+            gap: 72px;
         }
     
         .logo-container {
-            max-width: 264px;
-            margin-right: 120px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            row-gap: 16px;
+            max-width: 268px;
         }
     
         .footer-navigation-logo {
@@ -630,9 +647,10 @@ img {
     
         .subscribe-container {
             display: flex;
-            flex-direction: column;
-            max-width: 456px;
-            flex-shrink: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 398px;
         }
     
         .text-subscribe {
@@ -647,7 +665,10 @@ img {
     
         .subscribe-forms {
             display: flex;
-            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            row-gap: 16px;
         }
     
         .mail-subscribe {
