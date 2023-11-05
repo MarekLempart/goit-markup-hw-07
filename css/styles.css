@@ -526,7 +526,7 @@ img {
     
         .team-section {
             background: #F4F4FD;
-            padding: 120px 0;
+            padding: 96px 0;
             margin: 0 auto;
         }
     
@@ -774,13 +774,13 @@ img {
         }
 
         .label-subscribe {
-            display: block;
+            display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             max-width: 398px;
             height: 40px;
-            margin: auto auto;
+            margin: 72px auto 0px;
             flex-shrink: 0;
         }
     
@@ -860,8 +860,6 @@ img {
 /* ================================================= TABLET 👇 ========================================= */
 
 @media screen and (min-width: 768px) {
-    /* cały kod */
-
     .container {
             width: 768px;
             margin: 0 auto;
@@ -871,8 +869,8 @@ img {
         .list {
             list-style: none;
             display: flex;
-            gap: 72px;
-            margin: 0;
+            /*gap: 72px;*/
+            margin: 0px;
             justify-content: center;
             align-items: center;
         }
@@ -886,6 +884,10 @@ img {
             letter-spacing: 0.045em;
             text-transform: capitalize;
             margin-bottom: 72px;
+        }
+
+        .menu-container {
+            display: none;
         }
     
         /*===========================================Header Styles===========================================*/
@@ -920,7 +922,7 @@ img {
             line-height: 1.17;
             letter-spacing: 0.03em;
             text-transform: uppercase;
-            margin-right: 76px;
+            margin-right: 120px;
             color: var(--pressed_state-color);
         }
     
@@ -944,13 +946,10 @@ img {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            position: relative;
             transition-property: color;
             transition-duration: var(--transition-duration);
             transition-timing-function: var(--transition-tf);
-        }
-    
-        .navigation-link {
-            position: relative;
         }
     
         .navigation-link:hover,
@@ -984,15 +983,16 @@ img {
         }
     
         .address-list {
-            gap: 40px;
+            flex-direction: column;
+            gap: 12px;
             margin-right: 0px;
         }
     
         .address-link {
             color: var(--text-color);
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 400;
-            line-height: 1.5;
+            line-height: 1.17;
             letter-spacing: 0.02em;
             cursor: pointer;
             text-decoration: none;
@@ -1013,12 +1013,13 @@ img {
         /*===========================================Portfolio Section no. 1 Styles===========================================*/
     
         .section-project {
-            padding-top: 96px;
-            padding-bottom: 120px;
+            padding-top: 64px;
+            padding-bottom: 96px;
         }
     
         .filters-list {
-            margin-bottom: 72px;
+            margin-bottom: 64px;
+            gap: 24px;
         }
     
         .filter-button {
@@ -1049,13 +1050,14 @@ img {
         }
     
         .project-list {
+            display: flex;
             flex-wrap: wrap;
             column-gap: 24px;
-            row-gap: 48px;
+            row-gap: 72px;
         }
     
         .project-point {
-            flex-basis: calc((100% - 48px) / 3);
+            flex-basis: calc((100% - 24px) / 2);
         }
     
         .portfolio-section-container {
@@ -1121,7 +1123,7 @@ img {
     
         .hero-section {
             background-color: var(--hero_background-color);
-            padding: 188px 0px;
+            padding: 112px 0px;
             margin: 0 auto;
         }
     
@@ -1376,19 +1378,21 @@ img {
     
         .footer {
             background-color: var(--hero_background-color);
-            padding: 100px 0;
+            padding: 96px 0;
             margin: 0 auto;
         }
     
         .footer-container {
             display: flex;
+            flex-wrap: wrap;
             align-items: baseline;
             justify-content: start;
+            gap: 24px;
         }
     
         .logo-container {
             max-width: 264px;
-            margin: auto;
+            margin-left: 108px;
         }
     
         .footer-navigation-logo {
@@ -1418,7 +1422,7 @@ img {
     
         .socials-container {
             max-width: 208px;
-            margin: auto;
+            margin: 0px;
         }
     
         .text-socials {
@@ -1463,6 +1467,7 @@ img {
         .subscribe-container {
             max-width: 456px;
             flex-shrink: 0;
+            margin: 72px auto 0px 108px;
         }
     
         .text-subscribe {
@@ -1599,6 +1604,10 @@ img {
             gap: 24px;
             margin: 0;
             justify-content: center;
+        }
+
+        .menu-container {
+             display: none;
         }
     
         /*=================================================Header Styles=================================================*/
