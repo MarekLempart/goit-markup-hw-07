@@ -455,7 +455,17 @@ img {
             background-repeat: no-repeat;
             background-position: center;
             max-width: 428px;
+            min-width: auto;
         }
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .background-image-section {
+                    background-image: url('../images/mobile-people-office-background-image@2x.jpg');
+                }
+            }
     
         .main-headline {
             color: #FFF;
@@ -1052,12 +1062,13 @@ img {
         .project-list {
             display: flex;
             flex-wrap: wrap;
-            column-gap: 24px;
+            justify-content: flex-start;
+            column-gap: 18px;
             row-gap: 72px;
         }
     
         .project-point {
-            flex-basis: calc((100% - 24px) / 2);
+            flex-basis: calc((100% - 2px) / 18px);
         }
     
         .portfolio-section-container {
@@ -1128,12 +1139,22 @@ img {
         }
     
         .background-image-section {
-            background-image: linear-gradient(#2E2F42B3, #2E2F42B3), url('../images/people-office-background-image.jpg');
+            background-image: linear-gradient(#2E2F42B3, #2E2F42B3), url('../images/tablet-people-office-background-image.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            max-width: 1440px;
+            max-width: 1157px;
+            min-width: auto;
         }
+        
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .background-image-section {
+                    background-image: url('../images/tablet-people-office-background-image@2x.jpg');
+                }
+                }
     
         .main-headline {
             color: #FFF;
@@ -1860,7 +1881,17 @@ img {
             background-repeat: no-repeat;
             background-position: center;
             max-width: 1440px;
+            min-width: auto;
         }
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .background-image-section {
+                    background-image: url('../images/people-office-background-image@2x.jpg');
+                }
+                }
     
         .main-headline {
             color: #FFF;
