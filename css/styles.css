@@ -138,7 +138,7 @@ img {
             line-height: 1.17;
             letter-spacing: 0.03em;
             text-transform: uppercase;
-            padding: 24px auto 22px 0;
+            padding: 24px auto 22px 0px;
             color: var(--pressed_state-color);
         }
     
@@ -1068,7 +1068,7 @@ img {
         }
     
         .project-point {
-            flex-basis: calc((100% - 2px) / 18px);
+            flex-basis: calc((100% - 18px) / 2);
         }
     
         .portfolio-section-container {
