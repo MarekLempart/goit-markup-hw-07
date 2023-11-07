@@ -758,10 +758,10 @@ img {
     
         .subscribe-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 398px;
+            row-gap: 16px;            
         }
     
         .text-subscribe {
@@ -771,7 +771,6 @@ img {
             line-height: 1.5;
             letter-spacing: 0.02em;
             text-align: start;
-            margin-bottom: 16px;
         }
     
         .subscribe-forms {
@@ -796,11 +795,9 @@ img {
         }
     
         .mail-subscribe {
-            display: flex;
-            gap: 24px;
             background-color: transparent;
             color: var(--white_background-color);
-            width: 398px;
+            min-width: 268px;
             height: 40px;
             border: 1px solid var(--white_background-color);
             border-radius: 4px;
@@ -1508,8 +1505,6 @@ img {
         }
     
         .mail-subscribe {
-            display: flex;
-            gap: 24px;
             background-color: transparent;
             color: var(--white_background-color);
             width: 264px;
@@ -2240,8 +2235,6 @@ img {
         }
     
         .mail-subscribe {
-            display: flex;
-            gap: 24px;
             background-color: transparent;
             color: var(--white_background-color);
             width: 264px;
