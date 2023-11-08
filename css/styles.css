@@ -168,6 +168,14 @@ img {
             transition-duration: var(--transition-duration);
             transition-timing-function: var(--transition-tf);
         }
+
+        .mobile-studio-page {
+            color: var(--pressed_state-color);
+        }
+
+        .mobile-portfolio-page {
+            color: var(--pressed_state-color);
+        }
     
         .mobile-navigation-link {
             position: relative;
@@ -846,7 +854,11 @@ img {
         }
 }
 
-
+@media screen and (min-width: 428px) and (max-width: 767px) {
+    .mail-subscribe {
+        width: 398px;
+    }
+}
 
 
 /* ================================================= TABLET 👇 ========================================= */
